@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Company Banner</title>
+    
+    <link rel="stylesheet" href="http://pother.ca/CssBase/css/base.css" />
+    <link rel="stylesheet" href="http://pother.ca/CssBase/css/code.css" />
+    
+</head>
+<body>
+    <div class="page">
+        <h1>Single File include for a "Brought to you by" banner</h1>
+        <p>
+            Every so often I create an online example of how something works.
+        </p>
+        
+        <p>
+            As this sometimes occurs during working hours, I thought it might be 
+            nice to add a simple banner thanking my employer for allowing us to
+            exposing these things to a broader public.
+        </p>
+        
+        <p>
+            The idea was to have a single file of Javascript that could be 
+            included into any HTML page that would take care of all the work 
+            needed to add a nice banner.
+        </p>
+        
+        <p>
+            After some experiments the final result is somewhat flexibel as to
+            allow others to easily re-use the code for other companies.
+        </p>
+        <p>
+            The URL that the banner should link to, the Name of the company and 
+            any CSS class that should be added to the banner can be dynamically
+            passed in through URL query/search parameters
+        </p>
+        
+        <p>The banner at the bottom of this page is added with this line of HTML</p>
+        
+        <pre class="code" rel="Example Banner Include">
+&lt;script src="colofon-banner.js?url=http://thebeanmachine.nl/&cssClass=colofon-beanmachine&companyName=The Bean Machine" id="colofon-banner-script"&gt;&lt;/script&gt;
+        </pre>
+    </div>
+    
+    <script src="colofon-banner.js?url=http://thebeanmachine.nl/&cssClass=colofon-beanmachine&companyName=The Bean Machine" id="colofon-banner-script"></script>
+</body>
+</html>
