@@ -41,7 +41,7 @@
                 display: table;
                 height: 4em;
                 margin: 2em auto;
-                padding: 1em 8em 1em 1em;
+                padding: 1em 6.5em 1em 1em;
                 position: relative;
                 text-align: center;
                 z-index: 9999;
